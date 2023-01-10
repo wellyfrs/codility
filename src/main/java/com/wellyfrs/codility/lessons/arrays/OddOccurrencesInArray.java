@@ -1,15 +1,14 @@
-package com.wellyfrs.codility.lessons.lesson2;
+package com.wellyfrs.codility.lessons.arrays;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class OddOccurrencesInArray {
 
-    @SuppressWarnings("squid:S117")
-    public int solution(int[] A) {
+    public int findUnpairedElement(int[] arr) {
         Map<Integer, Integer> freq = new HashMap<>();
 
-        for (int a : A) {
+        for (int a : arr) {
             freq.put(a, freq.containsKey(a) ? freq.get(a) + 1 : 1);
         }
 

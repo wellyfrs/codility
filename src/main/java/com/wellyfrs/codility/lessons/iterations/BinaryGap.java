@@ -1,13 +1,12 @@
-package com.wellyfrs.codility.lessons.lesson1;
+package com.wellyfrs.codility.lessons.iterations;
 
 public class BinaryGap {
 
-    @SuppressWarnings("squid:S117")
-    public int solution(int N) {
+    public int findLongestBinaryGapLength(int n) {
         int gap = 0;
         int max = 0;
 
-        for (char c : Integer.toBinaryString(N).toCharArray()) {
+        for (char c : Integer.toBinaryString(n).toCharArray()) {
             if (c == '0') {
                 gap++;
             } else {

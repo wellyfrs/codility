@@ -1,4 +1,4 @@
-package com.wellyfrs.codility.lessons.lesson1;
+package com.wellyfrs.codility.lessons.iterations;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -10,13 +10,19 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class BinaryGapTest {
 
+    private final BinaryGap underTest = new BinaryGap();
+
     @ParameterizedTest
-    @MethodSource
-    void solution(int N, int expected) {
-        assertEquals(expected, new BinaryGap().solution(N));
+    @MethodSource("provideArgs")
+    void testSolution(int n, int expected) {
+        // when
+        int result = underTest.findLongestBinaryGapLength(n);
+
+        // then
+        assertEquals(expected, result);
     }
 
-    private static Stream<Arguments> solution() {
+    private static Stream<Arguments> provideArgs() {
         return Stream.of(
                 Arguments.of(1041, 5),
                 Arguments.of(15, 0),
