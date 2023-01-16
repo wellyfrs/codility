@@ -2,14 +2,15 @@ plugins {
     id 'java'
 }
 
-group 'com.wellyfrs'
+group 'me.wellyfrs'
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    implementation 'org.junit.jupiter:junit-jupiter:5.4.2'
+    implementation group: 'org.junit.jupiter', name: 'junit-jupiter', version: '5.4.2'
+    testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.24.1'
 }
 
 test {

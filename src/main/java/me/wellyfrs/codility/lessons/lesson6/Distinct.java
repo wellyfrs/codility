@@ -1,6 +1,8 @@
 package me.wellyfrs.codility.lessons.lesson6;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Set;
+import java.util.HashSet;
 
 public class Distinct {
 
@@ -22,6 +24,9 @@ public class Distinct {
         return result;
     }
 
+    /**
+     * Space complexity: O(2n)
+     */
     public int countDistinctItemsCleverly(int[] A) {
         Set<Integer> bucket = new HashSet<>();
         for (int a: A) bucket.add(a);

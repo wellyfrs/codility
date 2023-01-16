@@ -14,7 +14,7 @@ class NumberOfDiscIntersectionsTest {
         int[] arr = { 1, 5, 2, 1, 4, 0 };
 
         // when
-        int result = underTest.solution(arr);
+        int result = underTest.countDiscIntersections(arr);
 
         // then
         assertEquals(11, result);
