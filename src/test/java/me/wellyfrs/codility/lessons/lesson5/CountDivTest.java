@@ -2,7 +2,7 @@ package me.wellyfrs.codility.lessons.lesson5;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class CountDivTest {
 
@@ -19,6 +19,6 @@ class CountDivTest {
         int result = underTest.solution(A, B, K);
 
         // then
-        assertEquals(3, result);
+        assertThat(result).isEqualTo(3);
     }
 }

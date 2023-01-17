@@ -2,7 +2,7 @@ package me.wellyfrs.codility.lessons.lesson6;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class NumberOfDiscIntersectionsTest {
 
@@ -17,6 +17,6 @@ class NumberOfDiscIntersectionsTest {
         int result = underTest.countDiscIntersections(arr);
 
         // then
-        assertEquals(11, result);
+        assertThat(result).isEqualTo(11);
     }
 }

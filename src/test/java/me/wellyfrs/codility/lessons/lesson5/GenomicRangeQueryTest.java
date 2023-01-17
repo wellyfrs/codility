@@ -7,7 +7,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class GenomicRangeQueryTest {
 
@@ -24,7 +24,7 @@ class GenomicRangeQueryTest {
         int[] result = underTest.findMinImpactFactor(S, P, Q);
 
         // then
-        assertArrayEquals(new int[] { 2, 4, 1 }, result);
+        assertThat(result).isEqualTo(new int[] { 2, 4, 1 });
     }
 
     @ParameterizedTest
@@ -38,7 +38,7 @@ class GenomicRangeQueryTest {
         int[] result = underTest.findMinImpactFactor(S, P, Q);
 
         // then
-        assertArrayEquals(expected, result);
+        assertThat(result).isEqualTo(expected);
     }
 
     private static Stream<Arguments> provideSingleDNASequences() {

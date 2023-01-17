@@ -6,9 +6,7 @@ public class MissingInteger {
         int[] counters = new int[1_000_000];
 
         for (int n : arr) {
-            if (n > 0) {
-                counters[n] = 1;
-            }
+            if (n > 0) counters[n] = 1;
         }
 
         for (int i = 1; i <= counters.length; i++) {

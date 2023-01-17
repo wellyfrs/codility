@@ -2,7 +2,7 @@ package me.wellyfrs.codility.lessons.lesson7;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class StoneWallTest {
 
@@ -17,6 +17,6 @@ class StoneWallTest {
         int result = underTest.solution(H);
 
         // then
-        assertEquals(7, result);
+        assertThat(result).isEqualTo(7);
     }
 }

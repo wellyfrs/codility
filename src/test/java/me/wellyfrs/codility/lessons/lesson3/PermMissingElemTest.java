@@ -2,7 +2,7 @@ package me.wellyfrs.codility.lessons.lesson3;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class PermMissingElemTest {
 
@@ -17,7 +17,7 @@ class PermMissingElemTest {
         int result = underTest.findMissingElement(arr);
 
         // then
-        assertEquals(4, result);
+        assertThat(result).isEqualTo(4);
     }
 
 }

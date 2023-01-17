@@ -2,7 +2,7 @@ package me.wellyfrs.codility.lessons.lesson4;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class PermCheckTest {
 
@@ -17,7 +17,7 @@ public class PermCheckTest {
         int result = underTest.isPermutation(arr);
 
         // then
-        assertEquals(1, result);
+        assertThat(result).isEqualTo(1);
     }
 
     @Test
@@ -29,7 +29,7 @@ public class PermCheckTest {
         int result = underTest.isPermutation(arr);
 
         // then
-        assertEquals(0, result);
+        assertThat(result).isEqualTo(0);
     }
 
 }

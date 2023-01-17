@@ -2,7 +2,7 @@ package me.wellyfrs.codility.lessons.lesson6;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class MaxProductOfThreeTest {
 
@@ -17,6 +17,6 @@ class MaxProductOfThreeTest {
         int result = underTest.calculateMaxProductOfTriplets(arr);
 
         // then
-        assertEquals(60, result);
+        assertThat(result).isEqualTo(60);
     }
 }

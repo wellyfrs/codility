@@ -2,7 +2,7 @@ package me.wellyfrs.codility.lessons.lesson5;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class PassingCarsTest {
 
@@ -17,6 +17,6 @@ class PassingCarsTest {
         int result = underTest.countPassingCars(arr);
 
         // then
-        assertEquals(5, result);
+        assertThat(result).isEqualTo(5);
     }
 }

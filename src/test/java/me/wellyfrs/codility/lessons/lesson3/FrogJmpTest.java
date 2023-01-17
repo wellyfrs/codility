@@ -2,7 +2,7 @@ package me.wellyfrs.codility.lessons.lesson3;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class FrogJmpTest {
 
@@ -19,7 +19,7 @@ class FrogJmpTest {
         int result = underTest.calculateMinNumberOfJumps(origin, destiny, distance);
         
         // then
-        assertEquals(3, result);
+        assertThat(result).isEqualTo(3);
     }
 
 }

@@ -2,7 +2,7 @@ package me.wellyfrs.codility.lessons.lesson6;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class TriangleTest {
 
@@ -17,7 +17,7 @@ class TriangleTest {
         int result = underTest.containsTriangularTriplet(arr);
 
         // then
-        assertEquals(1, result);
+        assertThat(result).isEqualTo(1);
     }
 
     @Test
@@ -29,6 +29,6 @@ class TriangleTest {
         int result = underTest.containsTriangularTriplet(arr);
 
         // then
-        assertEquals(0, result);
+        assertThat(result).isEqualTo(0);
     }
 }

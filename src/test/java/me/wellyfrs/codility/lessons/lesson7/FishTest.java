@@ -2,7 +2,7 @@ package me.wellyfrs.codility.lessons.lesson7;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class FishTest {
 
@@ -18,7 +18,7 @@ class FishTest {
         int result = underTest.solution(A, B);
 
         // then
-        assertEquals(2, result);
+        assertThat(result).isEqualTo(2);
     }
 
 }

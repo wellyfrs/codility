@@ -2,7 +2,7 @@ package me.wellyfrs.codility.lessons.lesson4;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class FrogRiverOneTest {
 
@@ -18,7 +18,7 @@ public class FrogRiverOneTest {
         int result = underTest.solution(lastPosition, fallingLeaves);
 
         // then
-        assertEquals(6, result);
+        assertThat(result).isEqualTo(6);
     }
 
 }

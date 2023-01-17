@@ -2,7 +2,7 @@ package me.wellyfrs.codility.lessons.lesson3;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class TapeEquilibriumTest {
 
@@ -17,7 +17,7 @@ public class TapeEquilibriumTest {
         int result = underTest.solution(arr);
 
         // then
-        assertEquals(1, result);
+        assertThat(result).isEqualTo(1);
     }
 
 }

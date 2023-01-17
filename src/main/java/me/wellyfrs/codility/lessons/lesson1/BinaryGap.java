@@ -10,9 +10,7 @@ public class BinaryGap {
             if (c == '0') {
                 gap++;
             } else {
-                if (gap > max) {
-                    max = gap;
-                }
+                max = Math.max(max, gap);
                 gap = 0;
             }
         }

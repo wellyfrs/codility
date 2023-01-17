@@ -2,7 +2,7 @@ package me.wellyfrs.codility.lessons.lesson7;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class NestingTest {
 
@@ -17,7 +17,7 @@ class NestingTest {
         int result = underTest.solution(S);
 
         // then
-        assertEquals(1, result);
+        assertThat(result).isEqualTo(1);
     }
 
     @Test
@@ -29,6 +29,6 @@ class NestingTest {
         int result = underTest.solution(S);
 
         // then
-        assertEquals(0, result);
+        assertThat(result).isEqualTo(0);
     }
 }

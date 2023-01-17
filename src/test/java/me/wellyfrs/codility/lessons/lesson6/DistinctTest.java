@@ -2,7 +2,7 @@ package me.wellyfrs.codility.lessons.lesson6;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class DistinctTest {
 
@@ -17,7 +17,7 @@ class DistinctTest {
         int result = underTest.countDistinctItemsUsingSorting(A);
 
         // then
-        assertEquals(3, result);
+        assertThat(result).isEqualTo(3);
     }
 
     @Test
@@ -29,6 +29,6 @@ class DistinctTest {
         int result = underTest.countDistinctItemsCleverly(A);
 
         // then
-        assertEquals(3, result);
+        assertThat(result).isEqualTo(3);
     }
 }

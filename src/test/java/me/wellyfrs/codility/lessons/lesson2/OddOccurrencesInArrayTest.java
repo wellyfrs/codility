@@ -2,7 +2,7 @@ package me.wellyfrs.codility.lessons.lesson2;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class OddOccurrencesInArrayTest {
 
@@ -17,7 +17,7 @@ class OddOccurrencesInArrayTest {
         int result = underTest.findUnpairedElement(arr);
 
         // then
-        assertEquals(7, result);
+        assertThat(result).isEqualTo(7);
     }
 
 }

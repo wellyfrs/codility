@@ -6,7 +6,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class BinaryGapTest {
 
@@ -19,7 +19,7 @@ class BinaryGapTest {
         int result = underTest.findLongestBinaryGapLength(n);
 
         // then
-        assertEquals(expected, result);
+        assertThat(result).isEqualTo(expected);
     }
 
     private static Stream<Arguments> provideArgs() {

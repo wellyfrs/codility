@@ -2,7 +2,7 @@ package me.wellyfrs.codility.lessons.lesson4;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class MaxCountersTest {
 
@@ -18,6 +18,6 @@ class MaxCountersTest {
         int[] result = underTest.calculateCounters(N, arr);
 
         // then
-        assertArrayEquals(new int[] { 3, 2, 2, 4, 2 }, result);
+        assertThat(result).isEqualTo(new int[] { 3, 2, 2, 4, 2 });
     }
 }

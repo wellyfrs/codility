@@ -2,11 +2,6 @@ package me.wellyfrs.codility.lessons.lesson3;
 
 public class TapeEquilibrium {
 
-    /**
-     * Time complexity: O(n)
-     * @param arr non-empty array of N integers within the range [−1,000..1,000]
-     * @return minimal absolute difference between two non-empty parts of arr
-     */
     public int solution(int[] arr) {
         int total = 0;
 
